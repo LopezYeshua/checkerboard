@@ -1,0 +1,30 @@
+header {
+    text-align: center;
+}
+.game-container {
+    margin: 0 auto;
+    height: 400px;
+    width: 400px;
+    background-color: transparent;
+}
+
+.flex {
+    display: flex;
+}
+
+.container {
+    height: 50px;
+    width: 50px;
+}
+
+.container-red {
+    height: 50px;
+    width: 50px;
+    background-color: red;
+}
+
+.container-black {
+    height: 50px;
+    width: 50px;
+    background-color: black;
+}

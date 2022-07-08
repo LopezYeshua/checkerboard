@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkerboard</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/css/style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>***Checkerboard***</h1>
+    </header>
+
+    <div class="game-container flex">
+        {% for i in range(num1): %}
+            <div class="container">
+                {% for j in range(num2): %}
+                    {% if (i + j) % 2 == 0: %}
+                        <div class="container-red"></div>
+                    {% else: %}
+                        <div class="container-black"></div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
